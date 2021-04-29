@@ -16,30 +16,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // PASTE CODE YOU WANT TO TEST HERE
 
     }
-    public void convert_button(View view){
 
-        EditText rupee= (EditText) findViewById(R.id.rupee_text);
+    public void convert_button(View view) {
+
+        EditText rupee = (EditText) findViewById(R.id.rupee_text); //getting value from EditText to string
         String rupees = rupee.getText().toString();
-        int intRupee =Integer.parseInt(rupees);
+        int intRupee = Integer.parseInt(rupees);     //convert to integer value from string
 
-        float convert= calculate(intRupee);
-        String output = "Currency in $: "+ convert;
-        display(output);
+        float convert = calculate(intRupee);         //calculating value in a function calculate
+        String output = "Currency in $: " + convert;
+        display(output);                             //displaying the output with the help of a function display
     }
-    public float calculate(int intRupee){
-     float finalValue = (float) (intRupee / 74.20);
-     return finalValue;
+
+    public float calculate(int intRupee) {
+        return (float) (intRupee / 74.20);           // explicit conversion from int to float
     }
 
     public void display(String text) {
         TextView t = (TextView) findViewById(R.id.dollars_text);
         t.setText(text);
     }
-
-
 
 
 }
