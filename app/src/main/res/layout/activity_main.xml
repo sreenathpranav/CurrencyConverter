@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.practiseset2.MainActivity">
+
+    <EditText
+        android:id="@+id/rupee_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Currency in Rs"
+        android:textSize="25sp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:text="CONVERT"
+        android:onClick="convert_button"/>
+
+    <TextView
+        android:id="@+id/dollars_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textSize="25sp"
+        />
+
+
+
+</LinearLayout>
