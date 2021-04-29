@@ -10,9 +10,9 @@
         android:id="@+id/rupee_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Currency in Rs"
-        android:textSize="25sp"
-        android:inputType="number"/>
+        android:hint="Enter amount in Rs"
+        android:inputType="number"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button"
@@ -21,8 +21,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="25dp"
-        android:text="CONVERT"
-        android:onClick="convert_button"/>
+        android:onClick="convert_button"
+        android:text="CONVERT" />
 
     <TextView
         android:id="@+id/dollars_text"
@@ -30,9 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text=""
-        android:textSize="25sp"
-        />
-
+        android:textSize="25sp" />
 
 
 </LinearLayout>
